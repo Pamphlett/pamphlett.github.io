@@ -20,11 +20,11 @@
               <p style="text-align:center">
                 <name>Pengyu Yin</name>
               </p>
-              <p>I am a 2nd year Ph.D. student at <a href="https://www.ntu.edu.sg/eee">EEE, NTU</a> in Singapore.
+              <p>I am a 2nd year Ph.D. student at <a href="https://www.ntu.edu.sg/eee">EEE, NTU</a> in Singapore. I did both my master and bacholors degree at <a href="http://www.aiar.xjtu.edu.cn/">AIAR</a> in <a href="http://en.xjtu.edu.cn/">XJTU</a>. I also participated in a double degree program where I got the Diplôme d'Ingénieur from <a href="https://www.centralesupelec.fr/en">CentraleSupélec</a>.
               </p>
-              <p>
+              <!-- <p>
                 At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
-              </p>
+              </p> -->
               <p style="text-align:center">
                 <a href="mailto:pengyu001@ntu.edu.sg">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
@@ -52,7 +52,46 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
-      
+        <tr onmouseout="cobigicp_stop()" onmouseover="cobigicp_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='cobigicp_image'>
+                <img src='images/cobigicp.jpg' width="160"></div>
+              <img src='images/cobigicp.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function cobigicp_start() {
+                document.getElementById('cobigicp_image').style.opacity = "1";
+              }
+
+              function mira_stop() {
+                document.getElementById('cobigicp_image').style.opacity = "0";
+              }
+              cobigicp_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/9340857">
+              <papertitle>CoBigICP: Robust and Precise Point Set Registration using Correntropy Metrics and Bidirectional Correspondence</papertitle>
+            </a>
+            <br>
+            <a href="https://yenchenlin.me/">Pengyu Yin</a>, 
+            <a href="http://www.peteflorence.com/">Di Wang</a>, 
+            <a href="https://andyzeng.github.io/">Shaoyi Du</a>, 
+            <!-- <strong>Jonathan T. Barron</strong>,  -->
+            <a href="https://yilundu.github.io/">Shihui Ying</a>,
+            <a href="https://people.csail.mit.edu/weichium/">Yue Gao</a>,
+            <a href="https://anthonysimeonov.github.io/">Nanning Zheng</a>
+            <!-- <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
+            <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> -->
+            <br>
+            <em>IROS</em>, 2020
+            <p></p>
+            <p>
+              Interprets the lianson between NDT and ICP with special M-Estimator (Correntropy) from a statistical viewpoint.
+            </p>
+          </td>
+        </tr>	
 
       </td>
     </tr>
