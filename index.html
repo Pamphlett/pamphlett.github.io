@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" type="image/png" href="images/ntu_seal.png">
 </head>
 
 <body>
@@ -20,11 +20,8 @@
               <p style="text-align:center">
                 <name>Pengyu Yin</name>
               </p>
-              <p>I am a 2nd year Ph.D. student at <a href="https://www.ntu.edu.sg/eee">EEE, NTU</a> in Singapore. I did both my master and bacholors degree at <a href="http://www.aiar.xjtu.edu.cn/">AIAR</a> in <a href="http://en.xjtu.edu.cn/">XJTU</a>. I also participated in a double degree program where I got the Diplôme d'Ingénieur from <a href="https://www.centralesupelec.fr/en">CentraleSupélec</a>.
+              <p>I am a 2nd year Ph.D. student at <a href="https://www.ntu.edu.sg/eee">EEE, NTU</a> in Singapore, supervised by <a href="https://dr.ntu.edu.sg/cris/rp/rp00784">Prof. Lihua Xie</a>. I did both my master and bacholors degree at <a href="http://www.aiar.xjtu.edu.cn/">AIAR</a> in <a href="http://en.xjtu.edu.cn/">XJTU</a>, supervised by <a href="https://gr.xjtu.edu.cn/en/web/dushaoyi/home">Prof. Shaoyi Du</a>. I joined a double degree program from 2016-2016 and got the Diplôme d'Ingénieur from <a href="https://www.centralesupelec.fr/en">CentraleSupélec</a>.
               </p>
-              <!-- <p>
-                At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
-              </p> -->
               <p style="text-align:center">
                 <a href="mailto:pengyu001@ntu.edu.sg">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
@@ -52,6 +49,47 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
+          <tr onmouseout="seg_stop()" onmouseover="seg_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='seg_image'>
+                  <img src='images/segregator.png' width="160"></div>
+                <img src='images/segregator.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function seg_start() {
+                  document.getElementById('seg_image').style.opacity = "1";
+                }
+  
+                function seg_stop() {
+                  document.getElementById('seg_image').style.opacity = "0";
+                }
+                cobigicp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2301.07425">
+                <papertitle>Segregator: Global Point Cloud Registration with Semantic and Geometric Cues</papertitle>
+              </a>
+              <br>
+              <strong>Pengyu Yin</strong>,
+              Shenghai Yuan, 
+              <a href="https://www.researchgate.net/profile/Haozhi-Cao/">Haozhi Cao</a>, 
+              Xingyu Ji,
+              Shuyang Zhang,
+              <a href="https://anthonysimeonov.github.io/">Lihua Xie</a>
+              <br>
+              <em>ICRA</em>, 2023
+              <br>
+              <a href="https://github.com/Pamphlett/Segregator">Code</a> /
+              <a href="https://arxiv.org/abs/2301.07425">arXiv</a>
+              <p></p>
+              <p>
+                Combining point features and object level semantics to achive highly efficient outlier correspondence rejection.
+              </p>
+            </td>
+          </tr>	
+
         <tr onmouseout="cobigicp_stop()" onmouseover="cobigicp_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -64,7 +102,7 @@
                 document.getElementById('cobigicp_image').style.opacity = "1";
               }
 
-              function mira_stop() {
+              function cobigicp_stop() {
                 document.getElementById('cobigicp_image').style.opacity = "0";
               }
               cobigicp_stop()
@@ -75,23 +113,34 @@
               <papertitle>CoBigICP: Robust and Precise Point Set Registration using Correntropy Metrics and Bidirectional Correspondence</papertitle>
             </a>
             <br>
-            <a href="https://yenchenlin.me/">Pengyu Yin</a>, 
-            <a href="http://www.peteflorence.com/">Di Wang</a>, 
-            <a href="https://andyzeng.github.io/">Shaoyi Du</a>, 
+            <strong>Pengyu Yin</strong>,
+            <a href="https://github.com/DrGabor/">Di Wang</a>, 
+            <a href="https://gr.xjtu.edu.cn/en/web/dushaoyi/home/">Shaoyi Du</a>, 
             <!-- <strong>Jonathan T. Barron</strong>,  -->
-            <a href="https://yilundu.github.io/">Shihui Ying</a>,
-            <a href="https://people.csail.mit.edu/weichium/">Yue Gao</a>,
-            <a href="https://anthonysimeonov.github.io/">Nanning Zheng</a>
+            Shihui Ying,
+            <a href="https://www.gaoyue.org/">Yue Gao</a>,
+            Nanning Zheng
             <!-- <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
             <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> -->
             <br>
             <em>IROS</em>, 2020
             <p></p>
             <p>
-              Interprets the lianson between NDT and ICP with special M-Estimator (Correntropy) from a statistical viewpoint.
+              Interprets the liainson between NDT and ICP with a special kind of M-Estimator (Correntropy) from a statistical viewpoint.
             </p>
           </td>
         </tr>	
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Source code and template adapted from <a href= "https://jonbarron.info/">Jon Barron</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
 
       </td>
     </tr>
