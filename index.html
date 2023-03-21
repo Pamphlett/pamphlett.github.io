@@ -48,7 +48,49 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				
+          
+          <tr onmouseout="mmcota_stop()" onmouseover="mmcota_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mmcotta_image'>
+                  <img src='images/mmcota.jpg' width="160"></div>
+                <img src='images/mmcota.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mmcota_start() {
+                  document.getElementById('mmcotta_image').style.opacity = "1";
+                }
+  
+                function mmcota_stop() {
+                  document.getElementById('mmcotta_image').style.opacity = "0";
+                }
+                mmcota_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2303.10457">
+                <papertitle>Multi-Modal Continual Test-Time Adaptation for 3D Semantic Segmentation</papertitle>
+              </a>
+              <br>
+              <a href="https://www.researchgate.net/profile/Haozhi-Cao/">Haozhi Cao</a>,
+              <a href="https://xuyu0010.wixsite.com/xuyu0010">Yuecong Xu</a>, 
+              <a href="https://marsyang.site/">Jianfei Yang</a>, 
+              <strong>Pengyu Yin</strong>,
+              Shenghai Yuan,
+              <a href="https://personal.ntu.edu.sg/elhxie/">Lihua Xie</a>
+              <br>
+              <em>Submitted to ICCV</em>, 2023
+              <br>
+              <!-- <a href="https://github.com/Pamphlett/Segregator">Code</a> / -->
+              <a href="https://arxiv.org/abs/2303.10457">arXiv</a>
+              <p></p>
+              <p>
+                Adaptive cross-modal attending module to achieve reliable 3D segmentation in a continual test-time manner.
+              </p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="seg_stop()" onmouseover="seg_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
