@@ -48,7 +48,7 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+          
           <tr onmouseout="outram_stop()" onmouseover="outram_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -79,7 +79,6 @@
               Shuyang Zhang,
               <a href="https://kangchengliu.github.io/">Kangcheng Liu</a>,
               <a href="https://personal.ntu.edu.sg/elhxie/">Lihua Xie</a>
-              <!-- <em>ICCV</em>, 2023 -->
               <br>
               Under Review
               <br>
@@ -92,6 +91,44 @@
             </td>
           </tr>  
 
+          <tr onmouseout="liogvm_stop()" onmouseover="liogvm_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='liogvm_image'>
+                  <img src='images/liogvm.png' width="160"></div>
+                <img src='images/liogvm.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function liogvm_stop() {
+                  document.getElementById('liogvm_image').style.opacity = "1";
+                }
+                function liogvm_start() {
+                  document.getElementById('liogvm_image').style.opacity = "0";
+                }
+                liogvm_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2306.17436">
+                <papertitle>LIO-GVM: an Accurate, Tightly-Coupled Lidar-Inertial Odometry with Gaussian Voxel Map</papertitle>
+              </a>
+              <br>
+              Xingyu Ji,
+              Shenghai Yuan,
+              <strong>Pengyu Yin</strong>,
+              <a href="https://personal.ntu.edu.sg/elhxie/">Lihua Xie</a>
+              <!-- <em>ICCV</em>, 2023 -->
+              <br>
+              <em>RAL</em>, 2024
+              <br>
+              <a href="https://github.com/Ji1Xingyu/lio_gvm">Code</a> /
+              <a href="https://arxiv.org/abs/2306.17436">arXiv</a>
+              <p></p>
+              <p>
+                TL;DR. Robust LIO w/ distribution-based representation.
+              </p>
+            </td>
+          </tr> 
 
           <tr onmouseout="mmcota_stop()" onmouseover="mmcota_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
